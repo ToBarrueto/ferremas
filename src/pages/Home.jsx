@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { useCart } from '../context/CartContext'; // Importamos el contexto del carrito
+import { useCart } from '../context/CartContext';
+import CarouselComponent from '../components/Carousel';
 
 const Home = () => {
-  const { addToCart } = useCart(); // Accedemos a la función addToCart del carrito
+  const { addToCart } = useCart();
   const [productos, setProductos] = useState([]);
 
-  // Simulamos la carga de productos (esto será reemplazado con una API en el futuro)
+  //(esto será reemplazado con una API en el futuro)
   useEffect(() => {
     const productosData = [
       { id: 1, nombre: 'Producto 1', descripcion: 'Descripción del Producto 1', imagen: 'https://via.placeholder.com/150', precio: 10 },
@@ -26,6 +27,8 @@ const Home = () => {
       <h1 className="text-center mt-4">Bienvenido a FERREMAS</h1>
       <p className="lead text-center">Tu distribuidora de productos de ferretería y construcción.</p>
 
+      <CarouselComponent />  
+
       <h2 className="my-4">Catálogo de Productos</h2>
       <div className="row">
         {productos.length === 0 ? (
@@ -41,7 +44,7 @@ const Home = () => {
                   <p className="card-text"><strong>${producto.precio}</strong></p>
                   <button 
                     className="btn btn-primary"
-                    onClick={() => addToCart(producto)} // Al hacer clic en "Añadir al carrito"
+                    onClick={() => addToCart(producto)} 
                   >
                     Añadir al Carrito
                   </button>
