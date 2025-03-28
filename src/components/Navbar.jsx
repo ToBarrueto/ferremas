@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import { useCart } from "../context/CartContext"; // Importamos el contexto
+import { useCart } from "../context/CartContext"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'; // Importamos el ícono de la lupa
+import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons';
 import "../styles/styles.css";
-import logo from '../assets/ferremas.png'; // Asegúrate de importar la imagen desde la carpeta assets
+import logo from '../assets/ferremas.png';
 
 
 const Navbar = () => {
-  const { cart } = useCart(); // Accedemos al carrito desde el contexto
+  const { cart } = useCart(); 
 
-  // Calcular el número total de productos en el carrito
+ 
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
@@ -22,7 +22,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Barra de búsqueda más pequeña en el centro */}
         <div className="d-flex justify-content-center w-25">
           <form className="d-flex w-100">
             <input
@@ -31,14 +30,13 @@ const Navbar = () => {
               placeholder="¿Qué estás buscando?"
               aria-label="Buscar"
             />
-            {/* Ícono de lupa dentro del formulario */}
+
             <button type="submit" className="btn">
               <FontAwesomeIcon icon={faSearch} />
             </button>
           </form>
         </div>
 
-        {/* Los enlaces de la derecha (Inicio, Iniciar Sesión, Carrito) */}
         <div className="d-flex ms-auto">
           <ul className="navbar-nav">
             <li className="nav-item">

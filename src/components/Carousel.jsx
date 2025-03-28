@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import slide1 from '../assets/slide1.avif'; // Ruta de la primera imagen
-import slide2 from '../assets/slide2.avif'; // Ruta de la segunda imagen
-import slide3 from '../assets/slide3.avif'; // Ruta de la tercera imagen
+import slide1 from '../assets/slide1.avif'; 
+import slide2 from '../assets/slide2.avif';
+import slide3 from '../assets/slide3.avif'; 
 
 const CarouselComponent = () => {
   return (

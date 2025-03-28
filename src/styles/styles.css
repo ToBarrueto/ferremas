@@ -1,12 +1,12 @@
 .navbar-custom {
     background-color: #163B66;
-    position: fixed; /* Fija el navbar */
-    top: 0; /* Asegura que esté en la parte superior */
+    position: fixed;
+    top: 0; 
     left: 0;
     right: 0;
-    z-index: 1000; /* Asegura que esté sobre otros elementos */
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    z-index: 1000; 
+    width: 100%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   
 
@@ -24,7 +24,7 @@
   background-color: #e0e0e0;
 }
 
-/* Ajusta el tamaño del logo en el navbar */
+
 .navbar-logo {
   width: 250px; 
   height: auto;
@@ -32,9 +32,9 @@
 }
 
 .img-custom {
-  width: 100%;  /* Asegura que la imagen ocupe todo el ancho disponible */
-  height: 200px; /* Ajusta la altura según lo que necesites */
-  object-fit: contain; /* Mantiene la imagen completa sin recortarla */
+  width: 100%; 
+  height: 200px; 
+  object-fit: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px; /* Espacio entre icono y texto */
+  gap: 6px;
 }
 
 .btn-custom:hover {

@@ -1,13 +1,13 @@
 import React, { createContext, useState, useContext } from 'react';
 
-// Crear el contexto del carrito
+
 const CartContext = createContext();
 
-// Proveedor del contexto del carrito
+
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-  // Función para agregar productos al carrito
+
   const addToCart = (product) => {
     setCart((prevCart) => {
       const existingProduct = prevCart.find(item => item.id === product.id);
@@ -23,12 +23,10 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // Función para eliminar productos del carrito
   const removeFromCart = (id) => {
     setCart((prevCart) => prevCart.filter(item => item.id !== id));
   };
 
-  // Función para vaciar el carrito
   const clearCart = () => {
     setCart([]);
   };
@@ -40,7 +38,7 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-// Hook para acceder al contexto del carrito
+
 export const useCart = () => {
   return useContext(CartContext);
 };
