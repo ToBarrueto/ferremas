@@ -5,6 +5,7 @@ import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons'; //
 import "../styles/styles.css";
 import logo from '../assets/ferremas.png'; // Asegúrate de importar la imagen desde la carpeta assets
 
+
 const Navbar = () => {
   const { cart } = useCart(); // Accedemos al carrito desde el contexto
 

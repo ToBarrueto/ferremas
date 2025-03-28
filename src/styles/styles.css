@@ -1,5 +1,12 @@
 .navbar-custom {
     background-color: #163B66;
+    position: fixed; /* Fija el navbar */
+    top: 0; /* Asegura que esté en la parte superior */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
   }
   
 
@@ -24,3 +31,31 @@
   margin-left: 32px;
 }
 
+.img-custom {
+  width: 100%;  /* Asegura que la imagen ocupe todo el ancho disponible */
+  height: 200px; /* Ajusta la altura según lo que necesites */
+  object-fit: contain; /* Mantiene la imagen completa sin recortarla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-custom {
+  background-color: #f6323f; 
+  color: white; 
+  font-weight: bold; 
+  border: none; 
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* Espacio entre icono y texto */
+}
+
+.btn-custom:hover {
+  background-color: #d12a35; 
+}
+
+.container-custom {
+  margin-top: 80px;
+}

@@ -1,6 +1,6 @@
 const Login = () => {
   return (
-    <div className="d-flex justify-content-center vh-70">
+    <div className="container-custom d-flex justify-content-center vh-70">
       <div className="card mt-4 " style={{ width: "100%", maxWidth: "400px" }}>
         <div className="card-body">
           <h1 className="card-title text-center mb-4">Iniciar Sesión</h1>
