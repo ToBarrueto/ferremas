@@ -1,0 +1,26 @@
+.navbar-custom {
+    background-color: #163B66;
+  }
+  
+
+.navbar .form-control {
+  border-radius: 20px 0 0 20px; 
+}
+
+.navbar .btn {
+  border-radius: 0 20px 20px 0;
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.navbar .btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Ajusta el tamaño del logo en el navbar */
+.navbar-logo {
+  width: 250px; 
+  height: auto;
+  margin-left: 32px;
+}
+
