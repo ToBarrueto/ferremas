@@ -41,21 +41,63 @@
 }
 
 .btn-custom {
-  background-color: #f6323f; 
-  color: white; 
-  font-weight: bold; 
-  border: none; 
-  transition: background 0.3s ease-in-out;
+  background-color: #f6323f;
+  color: white;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
+  transition: background 0.3s;
+  border-radius: 16px;
 }
 
 .btn-custom:hover {
-  background-color: #d12a35; 
+  background-color: #d12a34;
 }
 
 .container-custom {
-  margin-top: 80px;
+  margin-top: 65px;
+  background-color: #E9F0F8 ;
 }
+
+
+
+.footer-custom {
+  background-color: #163B66; 
+  color: white;
+  padding: 15px 0;
+  
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.footer-custom .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-custom .social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-custom .social-icons a:hover {
+  color: #f6323f; 
+}
+
+.hero-section {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+.hero-section {
+  background-color: #E9F0F8; 
+  text-align: center;
+}
+
