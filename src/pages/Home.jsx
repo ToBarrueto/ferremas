@@ -4,6 +4,7 @@ import CarouselComponent from '../components/Carousel';
 import "../styles/styles.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -28,9 +29,12 @@ const Home = () => {
 
   return (
     <div className="container-custom">
-      <h1 className="text-center mt-4">Bienvenido a FERREMAS</h1>
-      <p className="lead text-center">Tu distribuidora de productos de ferretería y construcción.</p>
 
+      <div className="hero-section">
+        <h1 className="text-center mt-3">Bienvenido a <span style={{ color: "#f6323f" }}>FERREMAS</span></h1>
+        <p className="lead text-center">Tu distribuidora de productos de ferretería y construcción.</p>
+      </div>
+      
       <CarouselComponent />  
       <div className='container'>
       <h2 className="my-4">Catálogo de Productos</h2>
@@ -54,9 +58,13 @@ const Home = () => {
             </div>
           </div>
         ))}
+        
       </div>
+      
     </div>
+    <Footer />
     </div>
+    
   );
 };
 
