@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import slide1 from '../assets/slide1.avif'; 
 import slide2 from '../assets/slide2.avif';
 import slide3 from '../assets/slide3.avif'; 
