@@ -1,7 +1,8 @@
 const Login = () => {
   return (
-    <div className="container-custom d-flex justify-content-center vh-70">
-      <div className="card mt-4 " style={{ width: "100%", maxWidth: "400px" }}>
+    <div className="container-custom2 d-flex justify-content-center vh-70">
+{/* Suggested code may be subject to a license. Learn more: ~LicenseLog:524359200. */}
+      <div className="card mt-4 " style={{ width: "100%", maxWidth: "400px" , height: "400px" }}>
         <div className="card-body">
           <h1 className="card-title text-center mb-4">Iniciar Sesión</h1>
           <form>
