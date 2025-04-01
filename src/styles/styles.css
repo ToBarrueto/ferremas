@@ -1,6 +1,6 @@
 .navbar-custom {
     background-color: #163B66;
-    position: fixed;
+    position: sticky;
     top: 0; 
     left: 0;
     right: 0;
@@ -57,8 +57,8 @@
 }
 
 .container-custom {
-  margin-top: 65px;
   background-color: #E9F0F8 ;
+ 
 }
 
 

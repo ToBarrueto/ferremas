@@ -40,9 +40,6 @@ const Navbar = () => {
         <div className="d-flex ms-auto">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active text-white" aria-current="page" to="/">Inicio</Link>
-            </li>
-            <li className="nav-item">
               <Link className="nav-link text-white" to="/login">Iniciar Sesión</Link>
             </li>
             <li className="nav-item">
