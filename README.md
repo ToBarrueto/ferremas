@@ -47,8 +47,16 @@ Ve al sitio local que se especifique en consola.
 
 ## Capturas de pantalla
 
+### Sitio principal
+
 <div align="center">
   <img src="./docs/img/screenshot_home.png" alt="screenshot home" width="750">
+</div>
+
+### Carrito de compras
+
+<div align="center">
+  <img src="./docs/img/carrito_compras_v1.png" alt="screenshot cart" width="750">
 </div>
 
 ## Referencias
