@@ -9,29 +9,55 @@ const Cart = () => {
   };
 
   return (
-    <div className="container-custom">
-      <h2>Carrito de Compras</h2>
+    <div className="container-custom2 d-flex flex-column align-items-center text-center">
+  <h2 className="text-center mb-4">Carrito de Compras</h2>
       {cart.length === 0 ? (
-        <p>No tienes productos en el carrito.</p>
+        <p className="text-center">No tienes productos en el carrito.</p>
       ) : (
         <>
-          <ul className="list-group">
-            {cart.map((item) => (
-              <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
-                <div>
-                  <strong>{item.nombre}</strong> - ${item.precio} x {item.quantity}
-                </div>
-                <button
-                  className="btn btn-danger"
-                  onClick={() => removeFromCart(item.id)}
-                >
-                  Eliminar
-                </button>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-3">
+          <div className="table-responsive">
+            <table className="table table-striped table-bordered text-center">
+              <thead className="table-dark">
+                <tr>
+                  <th>Imagen</th>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th>Total</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cart.map((item) => (
+                  <tr key={item.id}>
+                    <td>
+                      <img
+                        src={item.imagen}
+                        alt={item.nombre}
+                        style={{ width: "100px", height: "100px", borderRadius: "16px" }}
+                      />
+                    </td>
+                    <td>{item.nombre}</td>
+                    <td>${item.precio}</td>
+                    <td>{item.quantity}</td>
+                    <td>${(item.precio * item.quantity).toFixed(2)}</td>
+                    <td>
+                      <button
+                        className="btn btn-danger btn-sm"
+                        onClick={() => removeFromCart(item.id)}
+                      >
+                        Eliminar
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="d-flex justify-content-between align-items-center mt-3">
             <h4>Total: ${getTotalPrice()}</h4>
+            </div>
+            <div className='mt-2'>
             <button className="btn btn-warning" onClick={clearCart}>
               Vaciar Carrito
             </button>

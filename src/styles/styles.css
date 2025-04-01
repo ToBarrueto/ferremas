@@ -101,3 +101,21 @@
   text-align: center;
 }
 
+.container-custom2{
+  background-color: #E9F0F8;
+  min-height: 100vh; 
+  padding: 20px;
+}
+
+
+.table {
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
