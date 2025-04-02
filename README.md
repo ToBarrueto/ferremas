@@ -16,6 +16,8 @@ Sitio web de una ferretería ficticia para la asignatura de Integración de Plat
 
 El sitio web fue diseñado con fines educativos para una asignatura del instituto. Su contenido es ficticio y solo se utiliza para fines de enseñanza.
 
+<img src="./docs/img/ferremas.png" alt="Icon" width="450">
+
 ## Instalación
 
 Clona el repo y entra a la carpeta:
@@ -47,8 +49,22 @@ Ve al sitio local que se especifique en consola.
 
 ## Capturas de pantalla
 
+### Sitio principal
+
 <div align="center">
   <img src="./docs/img/screenshot_home.png" alt="screenshot home" width="750">
+</div>
+
+### Carrito de compras
+
+<div align="center">
+  <img src="./docs/img/carrito_compras_v1.png" alt="screenshot cart" width="750">
+</div>
+
+### Interacción con el carrito de compras
+
+<div align="center">
+  <img src="./docs/img/ferremas_gif.gif" alt="cart interaction" width="750">
 </div>
 
 ## Referencias
