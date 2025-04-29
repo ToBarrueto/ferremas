@@ -31,7 +31,7 @@ const Home = () => {
     <div className="container-custom">
 
       <div className="hero-section">
-        <h1 className="text-center mt-3">Bienvenido a <span style={{ color: "#f6323f" }}>FERREMAS</span></h1>
+        <h1 className="text-center mt-3">Bienvenido a <span style={{ color: "#f6323f" }}>FERREMAS.</span></h1>
         <p className="lead text-center">Tu distribuidora de productos de ferretería y construcción.</p>
       </div>
       
