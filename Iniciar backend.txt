@@ -1,0 +1,6 @@
+PS C:\Users\ASUS\Desktop\ferremas> cd backend
+PS C:\Users\ASUS\Desktop\ferremas\backend> ..\env\Scripts\activate
+(env) PS C:\Users\ASUS\Desktop\ferremas\backend> python manage.py runserver
+
+http://127.0.0.1:8000/api/products/
+http://127.0.0.1:8000/api/users/
