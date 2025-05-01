@@ -34,41 +34,62 @@ const ProductForm = ({ selectedProduct, onSuccess }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4">
-      <input
-        name="name"
-        value={form.name}
-        onChange={handleChange}
-        placeholder="Nombre"
-        required
-      />
-      <input
-        name="description"
-        value={form.description}
-        onChange={handleChange}
-        placeholder="Descripción"
-        required
-      />
-      <input
-        name="price"
-        value={form.price}
-        onChange={handleChange}
-        placeholder="Precio"
-        type="number"
-        required
-      />
-      <input
-        name="stock"
-        value={form.stock}
-        onChange={handleChange}
-        placeholder="Stock"
-        type="number"
-        required
-      />
-      <button type="submit">
-        {selectedProduct ? 'Actualizar' : 'Crear'} Producto
-      </button>
-    </form>
+    <div className="card">
+      <div className="card-body">
+        <h5 className="card-title">{selectedProduct ? 'Editar' : 'Crear'} Producto</h5>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <label className="form-label">Nombre</label>
+            <input
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              className="form-control"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Descripción</label>
+            <input
+              name="description"
+              value={form.description}
+              onChange={handleChange}
+              className="form-control"
+              placeholder="Descripción"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Precio</label>
+            <input
+              name="price"
+              value={form.price}
+              onChange={handleChange}
+              className="form-control"
+              type="number"
+              placeholder="Precio"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Stock</label>
+            <input
+              name="stock"
+              value={form.stock}
+              onChange={handleChange}
+              className="form-control"
+              type="number"
+              placeholder="Stock"
+              required
+            />
+          </div>
+          <button type="submit" className="btn btn-primary w-100">
+            {selectedProduct ? 'Actualizar' : 'Crear'} Producto
+          </button>
+        </form>
+      </div>
+    </div>
   );
 };
 

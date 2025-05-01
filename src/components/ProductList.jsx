@@ -23,19 +23,50 @@ const ProductList = () => {
   };
 
   return (
-    <div>
-      <h2>Administrar Productos</h2>
-      <ProductForm selectedProduct={selectedProduct} onSuccess={fetchProducts} />
+    <div className="container mt-5">
+      <h2 className="mb-4 text-center">Administrar Productos</h2>
+      <div className="row">
+        {/* Lista de productos (izquierda) */}
+        <div className="col-md-6">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Productos</h5>
+              {products.length === 0 ? (
+                <p className="text-muted">No hay productos registrados.</p>
+              ) : (
+                <ul className="list-group">
+                  {products.map(p => (
+                    <li key={p.id} className="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <strong>{p.name}</strong> - ${p.price}
+                      </div>
+                      <div>
+                        <button
+                          className="btn btn-sm btn-warning me-2"
+                          onClick={() => setSelectedProduct(p)}
+                        >
+                          Editar
+                        </button>
+                        <button
+                          className="btn btn-sm btn-danger"
+                          onClick={() => handleDelete(p.id)}
+                        >
+                          Eliminar
+                        </button>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        </div>
 
-      <ul>
-        {products.map(p => (
-          <li key={p.id}>
-            {p.name} - ${p.price}
-            <button onClick={() => setSelectedProduct(p)}>Editar</button>
-            <button onClick={() => handleDelete(p.id)}>Eliminar</button>
-          </li>
-        ))}
-      </ul>
+        {/* Formulario (derecha) */}
+        <div className="col-md-6">
+          <ProductForm selectedProduct={selectedProduct} onSuccess={fetchProducts} />
+        </div>
+      </div>
     </div>
   );
 };
