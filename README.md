@@ -20,7 +20,7 @@ El sitio web fue diseñado con fines educativos para una asignatura del institut
 
 ## Instalación
 
-Para instalar el proyecto será necesario **abrir dos consolas**, una para el **Backend**, y otra para el **Frondend**, ambas corriendo **en paralelo**. A continuación se detalla cómo realizar el proceso.
+Para instalar el proyecto será necesario **abrir dos consolas**, una para el **Backend**, y otra para el **Frontend**, ambas corriendo **en paralelo**. A continuación se detalla cómo realizar el proceso:
 
 Clona el repo y entra a la carpeta:
 
@@ -28,6 +28,8 @@ Clona el repo y entra a la carpeta:
 git clone https://github.com/ToBarrueto/ferremas
 cd ferremas
 ```
+
+---
 
 ### Frontend
 
