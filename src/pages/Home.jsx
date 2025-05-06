@@ -18,7 +18,7 @@ const Home = () => {
           id: p.id,
           nombre: p.name,
           descripcion: p.description,
-          imagen: p.image || 'https://via.placeholder.com/300',
+          imagen: p.image || 'https://placehold.co/300',
           precio: p.price
         }));
         setProductos(productosAdaptados);
